@@ -32,9 +32,9 @@ total_cars_passed = 0
 crash_result = ""
 cars = deque()
 
-while not crash:
+while True:
     command = input()
-    if command == "END":
+    if command == "END" or crash:
         break
     if command != "green":
         cars.append(command)
