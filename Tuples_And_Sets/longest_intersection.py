@@ -17,9 +17,9 @@ for _ in range(number_of_ranges):
     range_two = range_two.split(",")
     range_one_start, range_one_end = int(range_one[0]), int(range_one[1]) + 1
     range_two_start, range_two_end = int(range_two[0]), int(range_two[1]) + 1
-    range_one = [i for i in range(range_one_start, range_one_end)]
-    range_two = [i for i in range(range_two_start, range_two_end)]
-    intersection = set(range_one).intersection(set(range_two))
+    range_one = set(range(range_one_start, range_one_end))
+    range_two = set(range(range_two_start, range_two_end))
+    intersection = range_one.intersection(range_two)
     if len(intersection) > len(longest_intersection):
         longest_intersection = intersection
 print(f"Longest intersection is {sorted(longest_intersection)} with length {len(longest_intersection)}")
