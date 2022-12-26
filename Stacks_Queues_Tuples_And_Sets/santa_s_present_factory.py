@@ -59,8 +59,8 @@ while materials and magics:
     else:
         materials.append(material + 15)
 
-if ("Doll" in presents_crafted and "Wooden train" in presents_crafted) or (
-        "Teddy bear" in presents_crafted and "Bicycle" in presents_crafted):
+if ("Doll" in presents_crafted and "Wooden train" in presents_crafted) or \
+        ("Teddy bear" in presents_crafted and "Bicycle" in presents_crafted):
     print("The presents are crafted! Merry Christmas!")
 else:
     print("No presents this Christmas!")
