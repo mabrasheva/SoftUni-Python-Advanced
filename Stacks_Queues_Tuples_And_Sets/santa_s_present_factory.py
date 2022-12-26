@@ -15,7 +15,7 @@ Your task is considered done if you manage to craft either one of the pairs:
 
 materials -> stack
 magic -> deque
-presents -> dict
+presents_crafted -> dict
 """
 
 from collections import deque
