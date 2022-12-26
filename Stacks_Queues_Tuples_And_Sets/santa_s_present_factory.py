@@ -14,7 +14,7 @@ Your task is considered done if you manage to craft either one of the pairs:
 •	a teddy bear and a bicycle
 
 materials -> stack
-magic -> deque
+magics -> deque
 presents_crafted -> dict
 """
 
