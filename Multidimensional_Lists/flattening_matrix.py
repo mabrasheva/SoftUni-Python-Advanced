@@ -5,14 +5,14 @@ On the first line, you will receive the number of a matrix's rows. On the next r
 column separated with a comma and a space ", ".
 """
 
-import sys
-from io import StringIO
+# import sys
+# from io import StringIO
 
-test_input = """3
-10, 2, 21, 4
-5, 20, 41, 9
-6, 2, 4, 99
-"""
+# test_input = """3
+# 10, 2, 21, 4
+# 5, 20, 41, 9
+# 6, 2, 4, 99
+# """
 
 # sys.stdin = StringIO(test_input)
 
