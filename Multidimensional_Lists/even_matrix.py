@@ -5,19 +5,19 @@ On the first line, you will receive the rows of the matrix.
 On the next rows, you will get elements for each column separated with a comma and a space ", ".
 """
 
-import sys
-from io import StringIO
+# import sys
+# from io import StringIO
 
-test_input1 = """2
-1, 2, 3
-4, 5, 6
-"""
-test_input2 = """4
-10, 33, 24, 5, 1
-67, 34, 11, 110, 3
-4, 12, 33, 63, 21
-557, 45, 23, 55, 67
-"""
+# test_input1 = """2
+# 1, 2, 3
+# 4, 5, 6
+# """
+# test_input2 = """4
+# 10, 33, 24, 5, 1
+# 67, 34, 11, 110, 3
+# 4, 12, 33, 63, 21
+# 557, 45, 23, 55, 67
+# """
 
 
 # sys.stdin = StringIO(test_input1)
