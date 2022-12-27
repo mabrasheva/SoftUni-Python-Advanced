@@ -3,14 +3,14 @@ Write a program that finds the sum of all numbers in a matrix's primary diagonal
 On the first line, you will receive an integer N – the size of a square matrix.
 The next N lines holds the values for each column - N numbers, separated by a single space.
 """
-import sys
-from io import StringIO
-
-test_input = """3
-11 2 4
-4 5 6
-10 8 -12
-"""
+# import sys
+# from io import StringIO
+#
+# test_input = """3
+# 11 2 4
+# 4 5 6
+# 10 8 -12
+# """
 
 # sys.stdin = StringIO(test_input)
 

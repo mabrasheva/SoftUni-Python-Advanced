@@ -6,23 +6,23 @@ Find the first occurrence of that symbol in the matrix and print its position in
 You should start searching from the top left.
 If there is no such symbol, print the message "{symbol} does not occur in the matrix".
 """
-
-import sys
-from io import StringIO
-
-test_input1 = """3
-ABC
-DEF
-X!@
-!
-"""
-test_input2 = """4
-asdd
-xczc
-qwee
-qefw
-4
-"""
+#
+# import sys
+# from io import StringIO
+#
+# test_input1 = """3
+# ABC
+# DEF
+# X!@
+# !
+# """
+# test_input2 = """4
+# asdd
+# xczc
+# qwee
+# qefw
+# 4
+# """
 
 # sys.stdin = StringIO(test_input1)
 # sys.stdin = StringIO(test_input2)
