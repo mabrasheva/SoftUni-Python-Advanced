@@ -17,8 +17,8 @@ def matrix_of_palindromes(rows, columns):
     for row_index in range(rows):
         row = []
         for columns_index in range(columns):
-            result = chr(row_index + symbol) + chr(row_index + columns_index + symbol) + chr(row_index + symbol)
-            row.append(result)
+            palindrome = chr(row_index + symbol) + chr(row_index + columns_index + symbol) + chr(row_index + symbol)
+            row.append(palindrome)
         result_matrix.append(row)
     return result_matrix
 
