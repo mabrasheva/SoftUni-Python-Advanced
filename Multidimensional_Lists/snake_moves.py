@@ -24,20 +24,42 @@ Constraints
 # """
 # sys.stdin = StringIO(test_input)
 
-rows_count, columns_count = [int(i) for i in input().split()]
-word = input()
-matrix = [[None for i in range(columns_count)] for row in range(rows_count)]
+### Version 1:
+# rows_count, columns_count = [int(i) for i in input().split()]
+# word = input()
+# matrix = [[None for i in range(columns_count)] for row in range(rows_count)]
+#
+# index = 0
+# for row in range(rows_count):
+#     if row % 2 == 0:
+#         for column in range(columns_count):
+#             matrix[row][column] = word[index % len(word)]
+#             index += 1
+#     else:
+#         for column in range(columns_count - 1, -1, -1):
+#             matrix[row][column] = word[index % len(word)]
+#             index += 1
+#
+# for row in matrix:
+#     print(*row, sep="")
 
-index = 0
+### Version 2:
+from collections import deque
+
+rows_count, columns_count = [int(i) for i in input().split()]
+word = deque(input())
+matrix = [[None for i in range(columns_count)] for row in range(rows_count)]
 for row in range(rows_count):
     if row % 2 == 0:
         for column in range(columns_count):
-            matrix[row][column] = word[index % len(word)]
-            index += 1
+            symbol = word.popleft()
+            matrix[row][column] = symbol
+            word.append(symbol)
     else:
-        for column in range(columns_count - 1, -1, -1):
-            matrix[row][column] = word[index % len(word)]
-            index += 1
+        for column in range(columns_count-1, -1, -1):
+            symbol = word.popleft()
+            matrix[row][column] = symbol
+            word.append(symbol)
 
 for row in matrix:
     print(*row, sep="")
