@@ -126,7 +126,7 @@ while not won and not dead:
     for bunnie_row, bunnie_column in bunnies:
         matrix[bunnie_row][bunnie_column] = "B"
 
-    if matrix[player_row][player_column] == "B":
+    if matrix[player_row][player_column] == "B" and not won:
         dead = True
 
 for row in matrix:
