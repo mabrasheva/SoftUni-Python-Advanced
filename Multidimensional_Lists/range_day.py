@@ -34,8 +34,6 @@ Constrains
 •	All the commands will be valid
 •	There will always be at least one target
 """
-import sys
-from io import StringIO
 
 
 def valid_coordinates(row, column, size):
