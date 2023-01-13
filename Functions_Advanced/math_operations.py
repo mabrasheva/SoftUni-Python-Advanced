@@ -36,10 +36,7 @@ def math_operations(*args, **kwargs):
                 kwargs[key] = operators[key](value, args.popleft())
 
     result = {key: value for key, value in sorted(kwargs.items(), key=lambda x: (-x[1], x[0]))}
-    result_formatted = []
-    for key, value in result.items():
-        result_formatted.append(f"{key}: {value:.1f}")
-    return "\n".join(result_formatted)
+    return "\n".join(f"{key}: {value:.1f}" for key, value in result.items())
 
 
 operators = {
