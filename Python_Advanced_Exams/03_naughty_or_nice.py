@@ -81,19 +81,19 @@ def naughty_or_nice_list(kids_list, *args, **kwargs):
     return "\n".join(result)
 
 
-# print(naughty_or_nice_list(
-#     [
-#         (3, "Amy"),
-#         (1, "Tom"),
-#         (7, "George"),
-#         (3, "Katy"),
-#     ],
-#     "3-Nice",
-#     "1-Naughty",
-#     Amy="Nice",
-#     Katy="Naughty",
-# ))
-# print()
+print(naughty_or_nice_list(
+    [
+        (3, "Amy"),
+        (1, "Tom"),
+        (7, "George"),
+        (3, "Katy"),
+    ],
+    "3-Nice",
+    "1-Naughty",
+    Amy="Nice",
+    Katy="Naughty",
+))
+print()
 print(naughty_or_nice_list(
     [
         (7, "Peter"),
@@ -108,21 +108,21 @@ print(naughty_or_nice_list(
     "1-Nice",
 ))
 print()
-# print(naughty_or_nice_list(
-#     [
-#         (6, "John"),
-#         (4, "Karen"),
-#         (2, "Tim"),
-#         (1, "Merry"),
-#         (6, "Frank"),
-#     ],
-#     "6-Nice",
-#     "5-Naughty",
-#     "4-Nice",
-#     "3-Naughty",
-#     "2-Nice",
-#     "1-Naughty",
-#     Frank="Nice",
-#     Merry="Nice",
-#     John="Naughty",
-# ))
+print(naughty_or_nice_list(
+    [
+        (6, "John"),
+        (4, "Karen"),
+        (2, "Tim"),
+        (1, "Merry"),
+        (6, "Frank"),
+    ],
+    "6-Nice",
+    "5-Naughty",
+    "4-Nice",
+    "3-Naughty",
+    "2-Nice",
+    "1-Naughty",
+    Frank="Nice",
+    Merry="Nice",
+    John="Naughty",
+))
