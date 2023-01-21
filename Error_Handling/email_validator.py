@@ -26,7 +26,7 @@ class InvalidDomainError(Exception):
     pass
 
 
-pattern = re.compile(r"(?P<name>\w+)@(?P<domain_name>\w+)\.(?P<domain>\w+)")
+pattern = re.compile(r"(?P<name>\w+)@(?P<domain_name>[a-z]+)\.(?P<domain>[a-z]+)")
 
 while True:
 
@@ -50,3 +50,6 @@ while True:
 
         else:
             print("Email is valid")
+
+    else:
+        continue
