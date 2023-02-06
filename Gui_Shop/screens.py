@@ -1,5 +1,7 @@
 from tkinter import Button, Label, Entry
 from auth_services import register, login
+from products_service import get_all_products
+from PIL import ImageTk, Image
 
 
 def clear_window(tk):
@@ -72,3 +74,24 @@ def render_login_screen(tk):
 
 def render_products_list_screen(tk):
     clear_window(tk)
+
+    products = get_all_products()
+    row = 0
+    column = 0
+    for product in products:
+        if column % 3 == 0:
+            row += 4
+            column = 0
+        Label(tk, text=product["name"]).grid(row=row, column=column)
+
+        photo_image = Image.open(f"./{product['imgPath']}")
+        photo_image = photo_image.resize((100, 100))
+        img = ImageTk.PhotoImage(photo_image)
+        img_label = Label(tk, image=img)
+        img_label.image = img
+        img_label.grid(row=row + 1, column=column)
+
+        Label(tk, text=product["count"]).grid(row=row + 2, column=column)
+        Button(tk, text="Buy", command=lambda buy_product=product["id"]: print(buy_product)).grid(row=row + 3,
+                                                                                                  column=column)
+        column += 1

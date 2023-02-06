@@ -1,0 +1,4 @@
+{"id": 1, "name": "Laptop", "imgPath": "laptop.jpg", "count": 10}
+{"id": 2, "name": "Mouse", "imgPath": "mouse.jpg", "count": 5}
+{"id": 3, "name": "Keyboard", "imgPath": "keyboard.jpg", "count": 3}
+{"id": 4, "name": "Phone", "imgPath": "phone.jpg", "count": 1}
